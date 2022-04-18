@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ranking de alunos - Pré Programação e Tech in Oracle",
+  "name": "Aplicação que mostra o desempenho dos alunos nos projetos de extensão Pré Programação e Tech in Oracle, ambos conduzidos pelo Professor Rodrigo Bossini",
   "icons": [
     {
       "src": "favicon.ico",
