@@ -31,7 +31,13 @@ const Ranking = () => {
             console.log(url)
             axios.get(url)
                 .then(res => {
-                    setRanking(res.data)
+                    console.log(res.data)
+                    console.log(typeof(res.data))
+                    setRanking(res.data.map(item => {
+                        return{
+                            ies: item.ies, nome: item.nome, pontos: item.pontos+'%'
+                        }
+                    }))
                 })
         },
     }
@@ -51,7 +57,7 @@ const Ranking = () => {
                     <DataTable value={ranking}>
                             <Column sortable="true" field="ies" header="IES" />
                             <Column sortable="true" field="nome" header="Nome" />
-                            <Column sortable="true" field="pontos" header="Pontuação" />
+                            <Column sortable="true" field="pontos" header="Percentual" />
                         </DataTable>
                     </TabPanel>
 
