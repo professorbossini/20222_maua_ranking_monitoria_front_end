@@ -1,10 +1,8 @@
 import React from 'react'
-
+import Ranking from './Ranking'
 const App = () => {
     return (
-        <div>
-            Modelo PrimeReact/PrimeFlex
-        </div>
+        <Ranking />
     )
 }
 
