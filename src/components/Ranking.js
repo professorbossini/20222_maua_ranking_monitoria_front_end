@@ -15,6 +15,7 @@ const Ranking = () => {
     
     const funcoesDeBusca = {
         0: (index) => {
+            setRanking([])
             setAbaAtiva(index)
             const url = `${env.BACKEND_URL}/${env.ENDPOINT_PREPROG}/ranking`
             console.log(url)
@@ -22,13 +23,23 @@ const Ranking = () => {
                 .then(res => {
                     setRanking(res.data)
                 })
-        }
+        },
+        1: (index) => {
+            setRanking([])
+            setAbaAtiva(index)
+            const url = `${env.BACKEND_URL}/${env.ENDPOINT_TECHINORACLE}/ranking`
+            console.log(url)
+            axios.get(url)
+                .then(res => {
+                    setRanking(res.data)
+                })
+        },
     }
    
     return (
-        <div class="grid flex justify-content-center">
+        <div className="grid flex justify-content-center">
             <div className="col-8">
-                <TabView activeIndex={abaAtiva} onTabChange={e => funcoesDeBusca[0](e.index)}>
+                <TabView activeIndex={abaAtiva} onTabChange={e => funcoesDeBusca[e.index](e.index)}>
                     <TabPanel header="Pré Programação">
                         <DataTable value={ranking}>
                             <Column sortable="true" field="ies" header="IES" />
@@ -37,7 +48,11 @@ const Ranking = () => {
                         </DataTable>
                     </TabPanel>
                     <TabPanel header="Tech in Oracle">
-                        oi
+                    <DataTable value={ranking}>
+                            <Column sortable="true" field="ies" header="IES" />
+                            <Column sortable="true" field="nome" header="Nome" />
+                            <Column sortable="true" field="pontos" header="Pontuação" />
+                        </DataTable>
                     </TabPanel>
 
                 </TabView>
