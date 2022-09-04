@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/css/styles.css"],"names":[],"mappings":"AAIA,sBACE,2BACF","file":"main.4211f5ac.chunk.css","sourcesContent":["td {\n  text-align: center !important;\n}\n\n.p-sortable-column {\n  text-align: center !important;\n}\n\n"]}
