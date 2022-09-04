@@ -20,7 +20,7 @@ const Ranking = () => {
     <div className="grid flex justify-content-center">
       <div className="col-8">
         <DataTable value={ranking}>
-          <Column sortable="true" field="ies" header="IES" />
+          <Column sortable="true" field="ra" header="RA" />
           <Column sortable="true" field="nome" header="Nome" />
           <Column sortable="true" field="pontos" header="Pontuação" />
         </DataTable>
