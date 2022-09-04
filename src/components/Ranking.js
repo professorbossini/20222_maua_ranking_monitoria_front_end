@@ -2,6 +2,7 @@ import axios from 'axios'
 import env from 'react-dotenv'
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
+import '../css/styles.css'
 
 import { Column } from 'primereact/column'
 import { DataTable } from 'primereact/datatable';
@@ -10,7 +11,7 @@ const Ranking = () => {
   const [ranking, setRanking] = useState([])
   useEffect(() => {
     const url = `${env.BACKEND_URL}/${env.ENDPOINT_RANKING}`
-    console.log(url)
+    // console.log(url)
     axios.get(url)
     .then(res => {
       setRanking(res.data)
@@ -23,7 +24,7 @@ const Ranking = () => {
       <div className="grid flex justify-content-center">
         <div className="col-8">
           <DataTable value={ranking}>
-            <Column sortable="true" field="ra" header="RA" />
+            {/* <Column sortable="true" field="ra" header="RA" /> */}
             <Column sortable="true" field="nome" header="Nome" />
             <Column sortable="true" field="pontos" header="Pontuação" />
           </DataTable>
