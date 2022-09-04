@@ -1,6 +1,7 @@
 import axios from 'axios'
 import env from 'react-dotenv'
 import React, { useState, useEffect } from 'react'
+import Navbar from './Navbar'
 
 import { Column } from 'primereact/column'
 import { DataTable } from 'primereact/datatable';
@@ -17,15 +18,17 @@ const Ranking = () => {
   }, [])
   
   return (
-    <div className="grid flex justify-content-center">
-      <div className="col-8">
-        <DataTable value={ranking}>
-          <Column sortable="true" field="ra" header="RA" />
-          <Column sortable="true" field="nome" header="Nome" />
-          <Column sortable="true" field="pontos" header="Pontuação" />
-        </DataTable>
+    <div>
+      <Navbar />
+      <div className="grid flex justify-content-center">
+        <div className="col-8">
+          <DataTable value={ranking}>
+            <Column sortable="true" field="ra" header="RA" />
+            <Column sortable="true" field="nome" header="Nome" />
+            <Column sortable="true" field="pontos" header="Pontuação" />
+          </DataTable>
+        </div>
       </div>
-  
     </div>
   )
   }
