@@ -1,3 +1,3 @@
 window.env = {
-  "BACKEND_URL": ""
+  "BACKEND_URL": "https://maua-ranking-monitoria-backend.herokuapp.com/"
 };
