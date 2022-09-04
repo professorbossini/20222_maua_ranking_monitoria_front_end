@@ -7,7 +7,7 @@ import 'primeflex/primeflex.css'
 // escolha o tema que desejar
 // https://primefaces.org/primereact/showcase/#/setup
 //escolhemos esse aqui
-import 'primereact/resources/themes/bootstrap4-light-purple/theme.css'
+import 'primereact/resources/themes/md-light-indigo/theme.css'
 
 ReactDOM.render(
     <App/>,
