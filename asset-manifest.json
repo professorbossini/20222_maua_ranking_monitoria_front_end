@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/20222_maua_ranking_monitoria_front_end/static/css/main.4211f5ac.chunk.css",
-    "main.js": "/20222_maua_ranking_monitoria_front_end/static/js/main.e5d5d742.chunk.js",
-    "main.js.map": "/20222_maua_ranking_monitoria_front_end/static/js/main.e5d5d742.chunk.js.map",
+    "main.js": "/20222_maua_ranking_monitoria_front_end/static/js/main.ef82aca8.chunk.js",
+    "main.js.map": "/20222_maua_ranking_monitoria_front_end/static/js/main.ef82aca8.chunk.js.map",
     "runtime-main.js": "/20222_maua_ranking_monitoria_front_end/static/js/runtime-main.1cd1c810.js",
     "runtime-main.js.map": "/20222_maua_ranking_monitoria_front_end/static/js/runtime-main.1cd1c810.js.map",
     "static/css/2.829d5ebc.chunk.css": "/20222_maua_ranking_monitoria_front_end/static/css/2.829d5ebc.chunk.css",
-    "static/js/2.ed1d5ce0.chunk.js": "/20222_maua_ranking_monitoria_front_end/static/js/2.ed1d5ce0.chunk.js",
-    "static/js/2.ed1d5ce0.chunk.js.map": "/20222_maua_ranking_monitoria_front_end/static/js/2.ed1d5ce0.chunk.js.map",
+    "static/js/2.d475da54.chunk.js": "/20222_maua_ranking_monitoria_front_end/static/js/2.d475da54.chunk.js",
+    "static/js/2.d475da54.chunk.js.map": "/20222_maua_ranking_monitoria_front_end/static/js/2.d475da54.chunk.js.map",
     "index.html": "/20222_maua_ranking_monitoria_front_end/index.html",
     "static/css/2.829d5ebc.chunk.css.map": "/20222_maua_ranking_monitoria_front_end/static/css/2.829d5ebc.chunk.css.map",
     "static/css/main.4211f5ac.chunk.css.map": "/20222_maua_ranking_monitoria_front_end/static/css/main.4211f5ac.chunk.css.map",
-    "static/js/2.ed1d5ce0.chunk.js.LICENSE.txt": "/20222_maua_ranking_monitoria_front_end/static/js/2.ed1d5ce0.chunk.js.LICENSE.txt",
+    "static/js/2.d475da54.chunk.js.LICENSE.txt": "/20222_maua_ranking_monitoria_front_end/static/js/2.d475da54.chunk.js.LICENSE.txt",
     "static/media/logo.d632cec6.png": "/20222_maua_ranking_monitoria_front_end/static/media/logo.d632cec6.png",
     "static/media/primeicons.css": "/20222_maua_ranking_monitoria_front_end/static/media/primeicons.e61f3495.woff",
     "static/media/theme.css": "/20222_maua_ranking_monitoria_front_end/static/media/roboto-v20-latin-ext_latin-regular.ae804dc0.woff"
@@ -19,8 +19,8 @@
   "entrypoints": [
     "static/js/runtime-main.1cd1c810.js",
     "static/css/2.829d5ebc.chunk.css",
-    "static/js/2.ed1d5ce0.chunk.js",
+    "static/js/2.d475da54.chunk.js",
     "static/css/main.4211f5ac.chunk.css",
-    "static/js/main.e5d5d742.chunk.js"
+    "static/js/main.ef82aca8.chunk.js"
   ]
 }
