@@ -26,7 +26,8 @@ const Ranking = () => {
           <DataTable value={ranking}>
             {/* <Column sortable="true" field="ra" header="RA" /> */}
             <Column sortable="true" field="nome" header="Nome" />
-            <Column sortable="true" field="pontos" header="Pontuação" />
+            <Column sortable="true" field="pontos" header="Número de exercícios resolvidos" />
+            <Column sortable="true" field="nota" header="Pontos que serão adicionados às atividades avaliativas (máximo 2)" />
           </DataTable>
         </div>
       </div>
