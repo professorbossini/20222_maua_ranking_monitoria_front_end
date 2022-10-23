@@ -24,7 +24,11 @@ const Ranking = () => {
       <Navbar />
       <div className="grid flex justify-content-center">
         <div className="col-8">
-          <DataTable value={ranking} emptyMessage={<ProgressBar mode="indeterminate" />}>
+          <DataTable 
+            value={ranking} 
+            emptyMessage={<ProgressBar mode="indeterminate" />}
+            paginator
+            rows={10}>
             {/* <Column sortable="true" field="ra" header="RA" /> */}
             <Column sortable="true" field="nome" header="Nome" />
             <Column sortable="true" field="pontos" header="Número de exercícios resolvidos" />
