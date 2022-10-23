@@ -6,6 +6,7 @@ import '../css/styles.css'
 
 import { Column } from 'primereact/column'
 import { DataTable } from 'primereact/datatable';
+import { ProgressBar } from 'primereact/progressbar';
 
 const Ranking = () => {
   const [ranking, setRanking] = useState([])
@@ -23,7 +24,7 @@ const Ranking = () => {
       <Navbar />
       <div className="grid flex justify-content-center">
         <div className="col-8">
-          <DataTable value={ranking}>
+          <DataTable value={ranking} emptyMessage={<ProgressBar mode="indeterminate" />}>
             {/* <Column sortable="true" field="ra" header="RA" /> */}
             <Column sortable="true" field="nome" header="Nome" />
             <Column sortable="true" field="pontos" header="Número de exercícios resolvidos" />
